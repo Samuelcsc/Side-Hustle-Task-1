@@ -5,8 +5,8 @@
 }
 
 .image-section {
+  background-image: url("https://res.cloudinary.com/ddhuwol3r/image/upload/v1660429856/arpit-dhore-KUxaMeDP60k-unsplash_fl2dge.jpg");
   width: 40%;
-  background: url(https://i.postimg.cc/nrrvPNr5/Group-7.png) no-repeat;
   background-size: cover;
   background-position: center;
 }
@@ -18,20 +18,17 @@
 
 .page-holder {
   display: flex;
-  height: 100vh;
-}
-
-.image-section {
-  background-image: url("https://res.cloudinary.com/ddhuwol3r/image/upload/v1660429856/arpit-dhore-KUxaMeDP60k-unsplash_fl2dge.jpg");
+  min-height: 100vh;
 }
 
 .box1 {
-  padding: 80px 100px 20px 40px;
+  padding: 20px 10px 20px 10px;
 }
 
 .box2 {
   background-color: rgb(192, 241, 200);
   padding: 30px 100px 20px 40px;
+  border: solid 2px red;
 }
 .flex {
   display: flex;
@@ -45,6 +42,7 @@ input {
   margin-bottom: 10px;
   padding: 0.2rem 5rem 0.2rem 0.2rem;
   outline-style: none;
+  width: 100%;
 }
 
 input[type="submit"] {
@@ -83,4 +81,42 @@ button {
 
 a {
   text-decoration: none;
+}
+
+marquee {
+  display: none;
+  background: whitesmoke;
+}
+
+.mobile {
+  display: none;
+}
+
+@media only screen and (max-width: 650px) {
+  /* For mobile phones: */
+  .flex {
+    display: block;
+  }
+
+  marquee {
+    display: block;
+  }
+
+  .box1 {
+    display: none;
+  }
+
+  .left-side {
+    margin-right: 0;
+  }
+
+  .page-holder {
+    display: none;
+  }
+
+  body {
+    background-image: url("https://res.cloudinary.com/ddhuwol3r/image/upload/v1660429856/arpit-dhore-KUxaMeDP60k-unsplash_fl2dge.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
 }
